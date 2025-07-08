@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2a80054084.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <section id="header-section">
+      <div class="header">
+        <div class="container">
+          <nav id="sidemenu">
+            <img src="images/logo.png" class="logo" alt="Logo" />
+
+            <!-- Nav List -->
+            <ul id="nav-links">
+              <li><a href="#header-section">Home</a></li>
+              <li><a href="#about-section">About</a></li>
+              <li><a href="#skills-section">Skills</a></li>
+              <li><a href="#portfolio-section">Projects</a></li>
+              <li><a href="#contact-section">Contact</a></li>
+              <li class="close-icon">
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+              </li>
+            </ul>
+
+            <!-- Hamburger Menu Icon -->
+            <i class="fa-solid fa-bars menu-icon" onclick="openmenu()"></i>
+          </nav>
+
+          <!-- Mobile Profile Image (Visible only on small screens) -->
+          <div class="mobile-profile-img">
+            <img src="images/profile.jpg" alt="Profile Image" />
+          </div>
+
+          <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>
+              Hi, I am <span>Paul</span><br />
+              Samuel from Tirunelveli
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section">
+      <div class="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col1">
+              <img src="images/profile.jpg" alt="Profile Image" />
+            </div>
+            <div class="about-col2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                An enthusiastic and disciplined engineering undergraduate with a
+                solid foundation in Java programming, RESTful API design, and
+                full-stack development using the MERN stack. I'm currently
+                mastering Data Structures and Algorithms and exploring DevOps
+                tools like Docker and AWS. Actively seeking software development
+                internships to make a real-world impact.
+              </p>
+
+              <!-- Tab Titles -->
+              <div class="tab-titles">
+                <div class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </div>
+                <div class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </div>
+                <div class="tab-links" onclick="opentab('education')">
+                  Education
+                </div>
+              </div>
+
+              <!-- Tab Contents -->
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Java</span><br />Programming in Java</li>
+                  <li>
+                    <span>Git & GitHub</span><br />Fundamentals of Git & GitHub
+                  </li>
+                  <li>
+                    <span>Frontend</span><br />HTML, CSS, JavaScript, React.js
+                  </li>
+                  <li><span>SQL</span><br />Database Management Systems</li>
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>Qantler Technologies</span><br /></li>
+                  <li>
+                    <span>Web Development Intern (Jan 2024)</span><br />
+                    Built a functional e-commerce platform with grid cards,
+                    dynamic filters (AJAX), and a shopping cart using HTML, CSS,
+                    and JavaScript. Integrated MySQL for secure user
+                    authentication and session handling.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>Undergraduate Degree</span><br />
+                    Bachelor of Engineering in Computer Science - CGPA: 7.6<br />
+                    Francis Xavier Engineering College
+                  </li>
+                  <li>
+                    <span>HSC</span><br />
+                    Completed 12th Standard with 89%<br />
+                    Daniel Thomas Matric Hr. Sec. School, Tisaiyanvillai
+                  </li>
+                  <li>
+                    <span>SSLC</span><br />
+                    Completed 10th Standard with 75.4%<br />
+                    Daniel Thomas Matric Hr. Sec. School, Tisaiyanvillai
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills-section">
+      <div class="skills">
+        <div class="container">
+          <h1 class="sub-title">Skills</h1>
+          <div class="skills-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Frontend Development</h2>
+              <p>
+                Skilled in crafting responsive, user-friendly interfaces using
+                HTML, CSS, JavaScript, and modern frameworks like React.
+                Passionate about creating seamless user experiences with
+                performance and accessibility in mind.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-github"></i>
+              <h2>Git & GitHub</h2>
+              <p>
+                Proficient in version control using Git and collaborative
+                development with GitHub. Experienced in managing repositories,
+                branching, pull requests, and resolving merge conflicts
+                efficiently.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-terminal"></i>
+              <h2>Data Structures & Algorithms</h2>
+              <p>
+                Strong understanding of core data structures (arrays, linked
+                lists, stacks, queues, trees, graphs) and algorithms (sorting,
+                searching, recursion, dynamic programming). Skilled in writing
+                efficient and optimized code to solve complex problems.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio-section">
+      <div class="portfolio">
+        <div class="container">
+          <h1 class="sub-title">Projects</h1>
+          <div class="work-lists">
+            <div class="work">
+              <img src="images/work1.png" alt="Project 1" />
+              <div class="layer">
+                <h3><strong>Royal Enfield Website</strong></h3>
+                <p>
+                  Here the people can view the latest collection of royal
+                  enfiled bikes
+                </p>
+                <a href="https://stupendous-marshmallow-abd074.netlify.app/"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work2.png" alt="Project 2" />
+              <div class="layer">
+                <h3><strong>Booster Learning Website</strong></h3>
+                <p>
+                  We have made an learning website for the computer science
+                  students
+                </p>
+                <a href="https://javasheet.netlify.app/"
+                  ><i class="fa-solid fa-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work3.png" alt="Project 3" />
+              <div class="layer">
+                <h3><strong>AI Based Video Summarizer</strong></h3>
+                <p>
+                  I have created the website to summarize the youtube videos
+                </p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------contact------------------------------------------>
+    <section id="contact-section">
+      <div class="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p>
+                <i class="fa-solid fa-paper-plane"></i> paulsamuel2143@gmail.com
+              </p>
+              <p><i class="fa-solid fa-phone"></i> 9025215051</p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/paul-samuel-a-5153952ab/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/paulsam21"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <a href="images/resume.pdf" download class="btn btn2"
+                >Download Cv</a
+              >
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="your message"
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="copy-rights">
+          <p>
+            <i class="fa-regular fa-copyright"></i> copyrights reserved
+            @paul_sam
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (let tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      function openmenu() {
+        document.getElementById("nav-links").classList.add("show");
+      }
+
+      function closemenu() {
+        document.getElementById("nav-links").classList.remove("show");
+      }
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwC4njEumqu6q1FPK2wup5DH0orm5rWHHSwOtq-JdwOmVJSC1fpCjI0nYg8fyr4o6FxhA/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>
